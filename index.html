@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Matter Group by Harish Charan</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .publication {
+            margin-bottom: 10px;
+        }
+        .editors-suggestion {
+            color: blue;
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        /* Tab Styles */
+        .tab-menu {
+            display: flex;
+            justify-content: center; /* Center the tabs */
+            margin-bottom: 20px; /* Space below the tabs */
+        }
+        .tab {
+            padding: 10px 15px;
+            margin: 0 5px; /* Space between tabs */
+            border: 1px solid #ccc; /* Add borders */
+            border-radius: 5px; /* Round the corners */
+            cursor: pointer;
+            background-color: #f0f0f0; /* Light background color */
+        }
+
+        .tab:hover {
+            background-color: #e0e0e0; /* Darker background on hover */
+        }
+
+        .tab.active {
+            background-color: #ddd; /* Even darker background for active tab */
+            font-weight: bold;
+        }
+        .content {
+            display: none; /* Hide all content initially */
+        }
+        .content.active {
+            display: block; /* Show content of active tab */
+        }
+
+        img { /* Style the image */
+            float: left;  /* Image to the left */
+            margin-right: 20px; /* Space to the right of the image */
+            margin-bottom: 20px; /* Space below the image */
+        }
+        p {
+            text-align: justify; /* Justify the paragraph text */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Soft Matter Group by Dr. Harish Charan</h1>
+
+    <div class="tab-menu">
+        <div class="tab active" data-tab="biography">Biography</div>
+        <div class="tab" data-tab="contact">Contact Us</div>
+        <div class="tab" data-tab="group">Group Members</div>
+        <div class="tab" data-tab="talks">Talks</div>
+        <div class="tab" data-tab="research">Research Areas</div>
+    </div>
+
+    <div class="content active" id="biography">
+        <IMG SRC="Image1-Compressed.jpg" width="200" height="200" ALIGN="left"/>
+        <p>Welcome to the Soft Matter Group! We explore the fascinating world of soft matter physics through both theoretical and experimental approaches.
+            We use the concepts of non-equilibrium statistical mechanics to understand the mechanics properties of soft matter.
+        </p>
+        <p>More biographical information will be added here soon.</p> </div>
+
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>Contact: [Add Contact Information Here - e.g., email address]</p>
+    </div>
+
+    <div class="content" id="group">
+        <h2>Group Members</h2>
+        <p>Information about group members will be added here soon.</p>
+    </div>
+
+    <div class="content" id="talks">
+        <h2>Talks</h2>
+        <p>Information about talks will be added here soon.</p>
+    </div>
+
+    <div class="content" id="research">
+        <h2>Research Areas</h2>
+        <ul>
+            <li>Statistical Physics</li>
+            <li>Granular Materials</li>
+            <li>Fluid Mechanics</li>
+            <li>Complex Plasma (Dusty Plasma)</li>
+            <li>Elastic Networks</li>
+        </ul>
+    </div>
+
+
+    <h2>Publications</h2>
+    <div class="publication">
+        <strong>Harish Charan</strong>, Michael Moshe, and Itamar Procaccia,
+        <em>Anomalous Elasticity and Emergent Dipole Screening in Three-Dimensional Amorphous Solids</em>,
+        Physical Review E, 107, 055005, (2023)
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+
+                // Deactivate all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                // Activate the clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
