@@ -32,113 +32,302 @@
         /* Tab Styles */
         .tab-menu {
             display: flex;
-            justify-content: center; /* Center the tabs */
-            margin-bottom: 20px; /* Space below the tabs */
+            justify-content: center;
+            margin-bottom: 20px;
         }
         .tab {
             padding: 10px 15px;
-            margin: 0 5px; /* Space between tabs */
-            border: 1px solid #ccc; /* Add borders */
-            border-radius: 5px; /* Round the corners */
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             cursor: pointer;
-            background-color: #f0f0f0; /* Light background color */
+            background-color: #f0f0f0;
         }
-
         .tab:hover {
-            background-color: #e0e0e0; /* Darker background on hover */
+            background-color: #e0e0e0;
         }
-
         .tab.active {
-            background-color: #ddd; /* Even darker background for active tab */
+            background-color: #ddd;
             font-weight: bold;
         }
         .content {
-            display: none; /* Hide all content initially */
+            display: none;
         }
         .content.active {
-            display: block; /* Show content of active tab */
+            display: block;
         }
-
-        img { /* Style the image */
-            float: left;  /* Image to the left */
-            margin-right: 20px; /* Space to the right of the image */
-            margin-bottom: 20px; /* Space below the image */
+        img {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
         p {
-            text-align: justify; /* Justify the paragraph text */
+            text-align: justify;
+        }
+        .etaremune {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .etaremune li {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Soft Matter Group by Dr. Harish Charan</h1>
+    <h1>Soft Matter Group by Harish Charan</h1>
 
     <div class="tab-menu">
         <div class="tab active" data-tab="biography">Biography</div>
         <div class="tab" data-tab="contact">Contact Us</div>
         <div class="tab" data-tab="group">Group Members</div>
-        <div class="tab" data-tab="talks">Talks</div>
+        <div class="tab" data-tab="talks">Talks and Outreach</div>
         <div class="tab" data-tab="research">Research Areas</div>
+        <div class="tab" data-tab="publications">Publications</div>
     </div>
 
-    <div class="content active" id="biography">
-        <IMG SRC="Image1-Compressed.jpg" width="200" height="200" ALIGN="left"/>
-        <p>Welcome to the Soft Matter Group! We explore the fascinating world of soft matter physics through both theoretical and experimental approaches.
-            We use the concepts of non-equilibrium statistical mechanics to understand the mechanics properties of soft matter.
-        </p>
-        <p>More biographical information will be added here soon.</p> </div>
+<div class="content active" id="biography">
+  <IMG SRC="Image1-Compressed.jpg" width="150" height="150" ALIGN="left"/>
+  <p>
+   Welcome to the Soft Matter Group! We explore the fascinating world of soft matter physics through both 
+   theoretical and computational approaches. We use the concepts of non-equilibrium statistical mechanics to 
+   understand the mechanics properties of soft matter.
+  </p>
+  <p>
+   I am a theoretical physicist with extensive expertise in soft matter physics, specializing in the dynamics and mechanical
+   properties of glassy systems, granular materials, and strongly coupled liquids. My work is grounded in advanced
+   theoretical modeling and computational simulations, backed by a deep understanding of statistical physics. I am
+   dedicated to advancing the study of disordered solids, prioritizing quality research that addresses key questions in the
+   field. Beyond my research, I am passionate about education and science outreach, working to make complex scientific
+   ideas accessible to both experts and the broader public. Collaboration and mentorship are central to my approach, and I
+   take pride in guiding graduate students with thoughtful and supportive supervision. In addition to physics, I actively
+   volunteer, and I am multilingual, fluent in Marwadi, Hindi, English, and Bengali. My personal interests extend to
+   philosophy, psychology, art, history, and world cuisines, all of which enrich my professional and personal life.
+  </p> 
 
-    <div class="content" id="contact">
-        <h2>Contact Us</h2>
-        <p>Contact: [Add Contact Information Here - e.g., email address]</p>
-    </div>
+<div class="education">
+  <h2>Education</h2>
+  <h3>Ph.D. in Physics (2011-2017)</h3>
+  <p><strong>Institute:</strong> Institute for Plasma Research (IPR), Gandhinagar, India<br>
+  <strong>Adviser:</strong> Prof. Rajaraman Ganesh<br>
+  <strong>Thesis:</strong> Yukawa liquids under external forcing: a molecular dynamics study  
+  <a href="http://www.hbni.ac.in/phdthesis/phys/PHYS06201104009.pdf" target="_blank">[Thesis Link]</a>
+  </p>
+  <h3>M.Sc. in Physics (2009-2011)</h3>
+  <strong>Institute:</strong> Indian Institute of Technology (IIT) Kharagpur, India<br>
+  <strong>Adviser:</strong> Prof. Shivcharan Lal Sharma<br>
+  <strong>Thesis:</strong> Experimental studies on the effects of &alpha; and &gamma; irradiation on the optical and dielectric 
+  properties of the solid-state nuclear track detector CR-39</p>
 
-    <div class="content" id="group">
-        <h2>Group Members</h2>
-        <p>Information about group members will be added here soon.</p>
-    </div>
+  <h3>B.Sc. in Natural Science</h3>
+  <p><strong>Institute:</strong> S.B.K. Government College (Maharshi Dayanand Saraswati University, Ajmer, Rajasthan), Jaisalmer, India<br>
+  <strong>Subjects:</strong> Physics, Chemistry, Mathematics, Hindi, English, and Environmental Science</p>
+</div>
 
-    <div class="content" id="talks">
-        <h2>Talks</h2>
-        <p>Information about talks will be added here soon.</p>
-    </div>
+<div class="research-positions">
+  <h2>Research Experience</h2>
+  <h3>Postdoctoral Research Associate (2023 - Present)</h3> 
+  <p><strong>Institute:</strong> Durham University (DU), Durham, UK<br>
+  <strong>Adviser:</strong> Prof. Suzanne Fielding<br>
+  <strong>Project:</strong> Friction in soft elastic solids</p>
+  <h3>Research Consultant (Jun - Oct 2023)</h3>
+  <p><strong>Institute:</strong> Weizmann Institute of Science (WIS), Rehovot, Israel<br>
+  <strong>Adviser:</strong> Prof. Itamar Procaccia<br>
+  <strong>Project:</strong> Anomalous elasticity in granular and glassy systems<br>
+  <h3>Postdoctoral Fellow (2018 - 2023)</h3>
+  <p><strong>Institute:</strong> WIS, Rehovot, Israel<br>
+  <strong>Adviser:</strong> Prof. Itamar Procaccia<br>
+  <strong>Project:</strong> Soft matter physics including granular dynamics and creep rupture in polymers</p>
 
-    <div class="content" id="research">
-        <h2>Research Areas</h2>
-        <ul>
-            <li>Statistical Physics</li>
-            <li>Granular Materials</li>
-            <li>Fluid Mechanics</li>
-            <li>Complex Plasma (Dusty Plasma)</li>
-            <li>Elastic Networks</li>
+  <h3>Postdoctoral Fellow (2017-2018) </h3>
+  <p><strong>Institute:</strong> IPR, Gandhinagar, India<br>
+  <strong>Adviser:</strong> Prof. Rajaraman Ganesh<br>
+  <strong>Project:</strong> Development of a large-scale massively parallel three-dimensional molecular dynamics simulation code</p>
+  <h3>Summer Intern (Summer 2010) </h3>
+  <p><strong>Institute:</strong> IIT Kharagpur, India<br>
+  <strong>Adviser:</strong> Dr. Ajay Kumar Singh<br>
+  <strong>Title:</strong> Experimental analysis of β spectrum of Strontium (<sup>90</sup>Sr) and Sodium (<sup>20</sup>Na), 
+   and study of Rutherford scattering for Radium (<sup>204</sup>Ra) and Americium (<sup>241</sup>Am)</p>
+</div>
+</div>
+
+<div class="content" id="contact">
+  <h2>Contact Us</h2>
+  <p>
+   Harish Charan,<br>
+   Postdoctoral Research Associate,<br>
+   Department of Physics,<br>
+   Durham University, DH1 3LE,<br>
+   Durham, United Kingdom,<br>
+   Email: charan.harish@gmail.com, harish.charan@durham.ac.uk
+  </p>
+</div>
+
+<div class="content" id="group">
+ <h2>Group Members</h2>
+ <p>Harish Charan</p>
+ <p>
+  We are always looking for hardworking and motivated MSc, PhD students and Postdocs to work with us. Please eamil us for any 
+  inquiries.  
+ </p>
+</div>
+
+<!-- Talks and Outreach-->
+<div class="content" id="talks">
+  <h2>Talks and Outreach</h2>
+  <p>Information about talks will be added here soon.</p>
+  </div>
+
+<!-- Research Areas-->
+ <div class="content" id="research">
+ <h2>Research Areas</h2>
+ <ul>
+ <li>Statistical Physics</li>
+
+<li>Granular Materials</li>
+<p>
+    Granular materials are composed of discrete, macroscopic particles that primarily interact through contact forces, 
+    rather than long-range forces <cite>Torquato2010Jam</cite>. Unlike systems governed by thermal fluctuations, granular 
+    materials are athermal and dissipative. They lose energy through friction and inelastic collisions, leading to unique 
+    mechanical properties <cite>Charan2023Ano</cite>, <cite>Chacko2019Slo</cite>, <cite>Lemaitre2021Ano</cite>. This non-equilibrium 
+    behaviour becomes even more intricate when considering nonspherical particles, such as ellipsoids, which exhibit restricted 
+    rotational motion and more complex contact geometries compared to spherical particles (see <a href="#ElipseGranular">Fig. 1</a>).
+    Non-spherical particles have anisotropic contact geometries, which influence the transmission of forces through the material 
+    and lead to varied stress distributions and force chain structures. The mechanical stability and force chains in such systems 
+    depend not only on the packing fraction but also on particle shape, orientation, and contact mechanics, leading to complex 
+    force networks that require detailed analysis. Jamming, which refers to the transition from a fluid-like state to a rigid, 
+    mechanically stable state, is well-studied in spherical particles, but the jamming behaviour of non-spherical particles remains 
+    less explored. While prior studies have explored some aspects of ellipsoidal granular materials, the role of friction in such systems remains 
+    insufficiently addressed, mainly due to the complexities of modeling friction in non-spherical geometries. In this group, 
+    we try fill this gap.
+</p>
+<div style="overflow: hidden;">
+ <figure id="ElastNet1" style="float: left; margin-right: 15px; width: 150px;">
+  <img src="ElipseGranular.png" alt="Elastic Network" width="150" height="150"> 
+  <figcaption><strong>Fig. 1:</strong> Elastic Network.</figcaption>
+</figure>
+</div>
+
+<li>Fluid Mechanics</li>
+<li>Complex Plasma (Dusty Plasma)</li>
+
+<p>
+  Yukawa liquids (YLs), a type of complex plasma, form when micron-sized dust 
+  grains are immersed in an electron-ion plasma, resulting in a strongly coupled system due to the dust grains 
+  acquiring high charges (≈ <span class="highlight">10<sup>4</sup>e</span>). In such systems, the dust grains interact through a screened 
+  Coulomb potential, also known as Yukawa interaction, where the background plasma provides shielding. The 
+  small charge-to-mass ratio (&lt; 1), high average potential-to-kinetic energy ratio (&gt; 50) and low temperature 
+  (≈ 0.025 eV) lead to the dominance of potential energy over kinetic energy, causing the system to 
+  behave in a strongly coupled regime. Depending on the coupling strength, YLs can exist in various states 
+  (solid-like, liquid-like, or gas-like), and the liquid phase, in particular, offers a 
+  unique opportunity to explore non-equilibrium phenomena and spatiotemporal pattern formation. Due to 
+  their mechanical properties, YLs are often described as the <span class="highlight">plasma state of soft matter</span> 
+  <cite>[Chaudhuri 2011 Com]</cite>, exhibiting viscoelastic behavior. This makes them an ideal system to study the  
+  effect of long-range interactions and coupling strength on turbulence, and instabilities under 
+  non-equilibrium conditions.
+</p>
+
+<li>Random Elastic Networks</li>
+<p>
+  Random Elastic Networks (RENs) are constructed by considering a set of nodes (representing particles, atoms, or 
+  molecules) connected by springs or elastic bonds, forming an irregular network with random connectivity, Z 
+  (see <a href="#ElastNet1">Fig. 2</a>) and exhibit dynamic heterogeneity when sheared 
+  (see <a href="#ElastNet2">Fig. 3</a>). These networks are particularly useful for modeling materials that lack regular 
+  crystalline structures but still exhibit elastic properties when subjected to external forces. The study of RENs 
+  provides insights into how local interactions between components (e.g., inter-particle 
+  forces or molecular bonds) give rise to macroscopic mechanical properties like elasticity, rigidity, and deformation.
+</p>
+
+<!-- Figures Section -->
+<div style="overflow: hidden;">
+    <figure id="ElastNet1" style="float: left; margin-right: 15px; width: 150px;">
+        <img src="Elastic-Network.png" alt="Elastic Network" width="150" height="150"> 
+        <figcaption><strong>Fig. 2:</strong> Elastic Network.</figcaption>
+    </figure>
+
+    <figure id="ElastNet2" style="float: left; margin-right: 15px; width: 150px;">
+        <img src="ShearedNetwork-nAtom6400.png" alt="Sheared Network" width="150" height="150">
+        <figcaption><strong>Fig. 3:</strong> Sheared Network with n = 6400 atoms.</figcaption>
+    </figure>
+</div>
+
+
+
         </ul>
     </div>
 
-
-    <h2>Publications</h2>
-    <div class="publication">
-        <strong>Harish Charan</strong>, Michael Moshe, and Itamar Procaccia,
-        <em>Anomalous Elasticity and Emergent Dipole Screening in Three-Dimensional Amorphous Solids</em>,
-        Physical Review E, 107, 055005, (2023)
+    <div class="content" id="publications">
+        <h2>Publications</h2>
+        <ul class="etaremune">
+            <li><strong>Harish Charan</strong>, Michael Moshe, and Itamar Procaccia, 
+                <em>Anomalous Elasticity and Emergent Dipole Screening in Three-Dimensional Amorphous Solids</em>, 
+                Physical Review E, 107, 055005, (2023)
+            </li>
+            <li><strong>Harish Charan</strong>, Anna Pomyalov, and Itamar Procaccia, 
+                <em>Generic Mechanism for Remote Triggering of Earthquakes</em>, 
+                Physical Review E, 104, 044903, (2021)
+            </li>
+            <li><strong>Harish Charan</strong>, Alex Hansen, H. George. E. Hentschel, and Itamar Procaccia, 
+                <em>Aging and Failure of a Polymer Chain under Tension</em>, 
+                <span class="underline">Physical Review Letters</span>, 126, 085501, (2021)
+            </li>
+            <li><strong>Harish Charan</strong>, Oleg Gendelman, Itamar Procaccia, and Yarden Sheffer, 
+                <em>Giant amplification of small perturbations in frictional amorphous solids</em>, 
+                Physical Review E, 101, 062902, (2020)
+            </li>
+            <li><strong>Harish Charan</strong>, Joyjit Chattoraj, Massimo Pica Ciamarra, and Itamar Procaccia, 
+                <em>Transition from Static to Dynamic Friction in an Array of Frictional Disks</em>, 
+                <span class="underline">Physical Review Letters</span>, 124, 030602, (2020)
+                <span class="editors-suggestion">[Editors' Suggestion]</span>
+            </li>
+            <li><strong>Harish Charan</strong> and Rajaraman Ganesh, 
+                <em>Supersonic flows past an obstacle in Yukawa liquids</em>, 
+                Physics of Plasmas, 25, 043706, (2018)
+                <span class="editors-suggestion">[Editor's pick]</span>
+            </li>
+            <li><strong>Harish Charan</strong> and Rajaraman Ganesh, 
+                <em>Strongly correlated classical plasmas under external forcing and dissipation--an example using Molecular Dynamics</em>, 
+                Journal of Physics: Conference Series, 759, 012061, (2016)
+            </li>
+            <li><strong>Harish Charan</strong> and Rajaraman Ganesh, 
+                <em>Molecular dynamics study of flow past an obstacle in strongly coupled Yukawa liquids</em>, 
+                Physics of Plasmas 23, 123703, (2016)
+                <span class="editors-suggestion">[Top Picks of Dusty Plasmas]</span>
+            </li>
+            <li><strong>Harish Charan</strong> and Rajaraman Ganesh, 
+                <em>Observation of the Rayleigh-B{\'e}nard convection cells in strongly coupled Yukawa liquids</em>, 
+                Physics of Plasmas, 22, 083702, (2015)
+            </li>
+            <li><strong>Harish Charan</strong>, Rajaraman Ganesh, and Ashwin Joy, 
+                <em>Molecular dynamics of Yukawa liquids in gravitation: Equilibrium, Instability and Transport</em>, 
+                Journal of Plasma Physics, 80, 895, (2014)
+            </li>
+            <li><strong>Harish Charan</strong>, Rajaraman Ganesh, and Ashwin Joy, 
+                <em>Properties of gravitationally equilibrated Yukawa systems--A molecular dynamics study</em>, 
+                Physics of Plasmas 21, 043702, (2014)
+                <span class="editors-suggestion">[Editor's pick]</span>
+            </li>
+        </ul>
     </div>
+
     <script>
+        // Tab switching functionality
         const tabs = document.querySelectorAll('.tab');
         const contents = document.querySelectorAll('.content');
 
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                const tabId = tab.dataset.tab;
-
-                // Deactivate all tabs and contents
+                // Remove active class from all tabs and contents
                 tabs.forEach(t => t.classList.remove('active'));
                 contents.forEach(c => c.classList.remove('active'));
 
-                // Activate the clicked tab and corresponding content
+                // Add active class to clicked tab and corresponding content
                 tab.classList.add('active');
-                document.getElementById(tabId).classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
             });
         });
     </script>
 
 </body>
 </html>
+
