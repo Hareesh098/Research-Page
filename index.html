@@ -380,37 +380,23 @@ and adaptation.
         </ul>
     </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const tabs = document.querySelectorAll(".tab");
-        const contents = document.querySelectorAll(".content");
-
-        // Retrieve the tab from the URL hash (e.g., #research)
-        const activeTab = window.location.hash.substring(1) || "biography";
-        setActiveTab(activeTab);
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
 
         tabs.forEach(tab => {
-            tab.addEventListener("click", function () {
-                const tabName = this.getAttribute("data-tab");
-                setActiveTab(tabName);
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
 
-                // Update the URL hash without reloading
-                window.location.hash = tabName;
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
             });
         });
-
-        function setActiveTab(tabName) {
-            tabs.forEach(tab => {
-                tab.classList.toggle("active", tab.getAttribute("data-tab") === tabName);
-            });
-
-            contents.forEach(content => {
-                content.classList.toggle("active", content.id === tabName);
-            });
-        }
-    });
-</script>
-
+    </script>
 
 </body>
 </html>
