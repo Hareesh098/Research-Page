@@ -175,26 +175,9 @@
 
 <!-- Talks and Outreach-->
 <div class="content" id="talks">
-  <h2>Outreach</h2>
-<p>The WISMO project Link: <a href="https://cmpoutreach.webspace.durham.ac.uk/" target="_blank">WISMO Project Website</a>.</p>
+    <h2>Outreach</h2>
+    <p>The WISMO project Link: <a href="https://cmpoutreach.webspace.durham.ac.uk/" target="_blank">WISMO Project Website</a>.</p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Presentations and Invited Talks</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
-        ul { list-style-type: none; padding-left: 0; }
-        li { margin-bottom: 10px; }
-        .emphasis { font-style: italic; }
-        .invited-talks { margin-top: 20px; }
-        .talk-entry { display: flex; justify-content: space-between; margin-bottom: 5px; }
-    </style>
-</head>
-<body>
     <h2>Conference Presentations and Posters</h2>
     <ul>
         <li>Out-of-equilibrium soft matter: challenges and perspectives, University of Lincoln, Lincoln, UK, 2024 [Talk]</li>
@@ -207,7 +190,7 @@
         <li>7<sup>th</sup> International Conference on the Physics of Dusty Plasmas, Delhi University, New Delhi, India, 2014 [Poster]</li>
         <li>28<sup>th</sup> National Symposium on Plasma Science & Technology, KIIT, Bhubaneswar, Odisha, India, 2013 [Poster]</li>
     </ul>
-    
+
     <h2 class="invited-talks">Invited Seminars</h2>
     <div class="talk-entry">
         <span>Institute for Plasma Research, Gandhinagar, India, 2025</span>
@@ -216,7 +199,7 @@
         <span>University of Durham, Durham, UK, 2024</span>
     </div>
     <div class="talk-entry">
-       <span>Charles University, Prague, Czech Republic, 2017</span>
+        <span>Charles University, Prague, Czech Republic, 2017</span>
     </div>
     <div class="talk-entry">
         <span>Delhi University, New Delhi, India, 2016</span>
@@ -227,11 +210,7 @@
     <div class="talk-entry">
         <span>Dharmsinh Desai Institute of Technology, Gujarat, India, 2015</span>
     </div>
-</body>
-</html>
-
-  </div>
-
+</div>
 <!-- Research Areas-->
  <div class="content" id="research">
  <h2>Research Areas</h2>
@@ -379,5 +358,43 @@ and adaptation.
             </li>
         </ul>
     </div>
+ <script>
+        // JavaScript to handle tab switching
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        // Function to show the selected tab
+        function showTab(tabName) {
+            // Remove 'active' class from all tabs and contents
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Add 'active' class to the selected tab and content
+            const activeTab = document.querySelector(`[data-tab="${tabName}"]`);
+            const activeContent = document.getElementById(tabName);
+
+            if (activeTab && activeContent) {
+                activeTab.classList.add('active');
+                activeContent.classList.add('active');
+            }
+
+            // Store the active tab in localStorage to persist after refresh
+            localStorage.setItem('activeTab', tabName);
+        }
+
+        // Add click event listeners to each tab
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabName = tab.getAttribute('data-tab');
+                showTab(tabName);
+            });
+        });
+
+        // On page load, check localStorage for the active tab and show it
+        window.addEventListener('load', () => {
+            const activeTab = localStorage.getItem('activeTab') || 'biography'; // Default to biography
+            showTab(activeTab);
+        });
+    </script>
 </body>
 </html>
